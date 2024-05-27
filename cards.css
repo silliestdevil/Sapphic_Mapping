@@ -1,0 +1,747 @@
+
+
+  .item1 { grid-area: item1; }
+  .item2 { grid-area: item2; }
+  .item3 { grid-area: item3; }
+ 
+  /* Total scrollbar width */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background:  #e7dfd3; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #a93838; /* Handle color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #a93838;; /* Handle color when hovered */
+}
+  header {
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#a93838;
+    text-shadow: 0px 0px 0 #292424;
+    background-color: #e7dfd3;
+    width: 98% ;
+    text-transform: uppercase;
+    margin: 15px auto; /* Center alignment */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+  
+  }
+
+
+.select-date {
+  font-family: "sutro-deluxe-inline-fill", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 50px;
+ 
+}
+
+ 
+#select-month {
+  width: 170px;
+  font-family: "sutro-deluxe-inline-fill", sans-serif;
+  font-weight: 10;
+ padding: 2px;
+  font-style: normal;
+  border: 1px solid #a93838;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #e7e1d8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #a93838;
+}
+
+#select-month:hover {
+  background-color: #e4d8c6;
+  border-color: #a93838;
+  color: #a93838;
+}
+
+#select-month:focus {
+  background-color: #e4d8c6;
+  outline: none;
+  border-color: #a93838;
+  color: #a93838;
+  
+}
+
+
+ 
+/* Targeting the main popup container */
+.mapboxgl-popup {
+  color: #a93838; /* Text color */
+  background-color: #e4d8c6; /* Background color */
+  font-family: "sutro-deluxe-primary", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+}
+
+/* Targeting the popup content */
+.mapboxgl-popup-content {
+  color: #a93838; /* Text color */
+  background-color: #e4d8c6; /* Background color */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  padding: 10px; /* Optional: Adds padding inside the popup */
+  font-size: 10px;
+}
+
+p, a {
+  position:relative;
+  text-align: center;
+  font-family: "sutro-deluxe-primary", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 10px;
+  top: 30px;
+  text-transform: uppercase;
+  color: #a93838;
+}
+
+nav{
+    position: absolute;
+    top: 200px; 
+    width: 500px; 
+    padding: 2em; 
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+}
+
+nav > div{
+flex:1; 
+}
+
+.pages{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+
+h1{
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 180px;
+    color: #a93838;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.intros{
+ 
+  font-family: "sutro-deluxe-primary", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  
+  color: #e8d0d0;
+}
+
+h1 span{
+    position: relative;
+}
+
+
+p{
+  position:relative;
+  text-align: center;
+  font-family: "sutro-deluxe-inline-fill", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  width: 100%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #a93838;
+}
+#marker {
+     
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  
+}
+ 
+
+  .open-button {
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-inline-fill", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    top: 30px;
+    text-transform: uppercase;
+    color: #a93838;
+   border: solid 1px;
+}
+.iframe-container {
+    display: none;
+    color: #a93838;
+    font-family: "sutro-deluxe-inline-fill", sans-serif;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: white;
+    height: 533px;
+}
+
+ 
+@media only screen and (min-width: 980px){
+
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item1 item3 item2';
+    grid-gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f0e9df;
+   padding-top: 0px;
+    grid-template-columns: auto; /* Set columns to fit content */
+  }
+
+  .boxA{
+
+   background: rgb(54, 97, 83);
+  }
+
+ 
+  html, body {
+    margin: 0;
+    /** Possibly padding too **/
+    padding: 0;
+    background-color: #f0e9df;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+  }
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    min-width: 200px;
+   height: 0px;
+   top: -10px;
+   left: 10px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d8cfcf;
+    margin: 20px auto 0;
+    border:  6px double rgba(154, 52, 52, 0.689);
+  }
+  
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 470px;
+    min-width: 200px;
+border-radius: 20px;
+    height: 500px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+   
+    /* overflow: hidden; */
+
+  }
+
+  .text{
+    max-width: 300px; 
+    margin: 0 auto; 
+    padding-top: 30px; 
+  }
+
+.card{
+    position: absolute;
+    top: 30%; 
+   
+    width: 180px;
+height: 260px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d(10%, -65%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+padding: 20px;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+
+  #map { position: absolute; top: 0; bottom: 0; width: 100%;  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 980px){
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  h1{
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 180px;
+    color: #a93838;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+
+  .card{
+    position: absolute;
+    top: 30%; 
+    width: 50%; 
+    max-width: 200px;
+height: 300px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d(50%, -20%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item3 item3'
+    'item1 item2';
+    grid-gap: 10px;
+    background-color: #f0e9df;
+    padding: 10px;
+
+
+  }
+  html, body {
+    margin: 0;
+    /** Possibly padding too **/
+    padding: 0;
+    background-color: #f0e9df;
+    overflow-x: hidden;
+  }
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    min-width: 200px;
+   height: 0px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d8cfcf;
+    border:  6px double rgba(154, 52, 52, 0.689);
+  }
+  
+  .container {
+    position: relative;
+    width: 95%;
+    float: right;
+    max-width: 470px;
+    min-width: 200px;
+    height: 50px;
+   
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+  
+    overflow: hidden;
+    background-color: #f0e9df;
+
+  }
+
+
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+}
+
+@media only screen and (max-width: 680px) and (min-width: 450px){
+  html, body {
+    margin: 0;
+    /** Possibly padding too **/
+    padding: 0;
+    background-color: #f0e9df;
+    overflow-x: hidden;
+ 
+  }
+  .card{
+    position: absolute;
+    top: 30%; 
+    width: 50%; 
+    max-width: 300px;
+height: 300px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d( 50%, -30%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+margin: 0 auto;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    min-width: 200px;
+   margin: auto 0;
+  
+    padding-top: 72%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0e9df;
+    border:  6px double rgba(154, 52, 52, 0.689);
+    top: 20px;
+    margin: 10px;
+  }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+  h1{
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 180px;
+    color: #a93838;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item3'
+    'item1'
+    'item2';
+    grid-gap: 10px;
+    background-color: #f0e9df;
+    padding: 10px;
+padding-left: 30px;
+padding-right: 30px;
+
+  }
+
+  body{
+    overflow-y: auto;
+  }
+
+  
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    min-width: 200px;
+    height: 0;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    overflow: hidden;
+    background-color: #f0e9df;
+    text-align: center;
+  }
+
+  header {
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#a93838;
+    text-shadow: 0px 0px 0 #292424;
+    background-color: #e7dfd3;
+    width: 95% ;
+    text-transform: uppercase;
+    margin: 15px auto; /* Center alignment */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+  
+  }
+}
+ 
+@media only screen and (min-width: 400px) and (max-width: 450px){
+  html, body {
+    margin: 0;
+    overflow-x: hidden;
+    /** Possibly padding too **/
+    padding: 0;
+    background-color: #f0e9df;
+ 
+  }
+
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  header {
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#a93838;
+    text-shadow: 0px 0px 0 #292424;
+    background-color: #f0e9df;
+    width: 95% ;
+    text-transform: uppercase;
+    margin: 15px auto; /* Center alignment */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+  
+  }
+
+  h1{
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 180px;
+    color: #a93838;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+   height: 0px;
+   margin: 20px 0 auto;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d8cfcf;
+    border:  6px double rgba(154, 52, 52, 0.689);
+  }
+  #map { position: absolute; top: 0; bottom: 0; width: 125%; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item3'
+    'item1'
+    'item2';
+    grid-gap: 10px;
+    background-color: #f0e9df;
+    padding: 10px;
+padding-left: 10px;
+padding-right: 10px;
+
+  }
+
+  body{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .card{
+    position: absolute;
+    top: 30%; 
+    width: 200px;
+height: 300px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d(40%, -20%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+  
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  min-width: 100px;
+  height: 0;
+  padding-top: 100%; /* This ensures the height is always equal to the width */
+  overflow: hidden;
+  background-color: #f0e9df;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 400px){
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    min-width: 200px;
+   height: 0px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0e9df;
+    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+    top: 20px;
+  }
+  #map { position: absolute; top: 0; bottom: 0; width: 125%; }
+
+  header {
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#a93838;
+    text-shadow: 0px 0px 0 #292424;
+    background-color: #f0e9df;
+    width: 95% ;
+    text-transform: uppercase;
+    margin: 15px auto; /* Center alignment */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+  
+  }
+  h1{
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-primary", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 180px;
+    color: #a93838;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item3'
+    'item1'
+    'item2';
+    grid-gap: 10px;
+    background-color: #f0e9df;
+    padding: 10px;
+padding-left: 10px;
+padding-right: 10px;
+
+  }
+
+  body{
+    overflow-x: hidden;
+    background-color: #f0e9df;
+  }
+
+  .card{
+    position: absolute;
+    top: 30%; 
+    width: 200px;
+height: 300px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d(20%, -20%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+  
+.container {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  max-width: 700px;
+  min-width: 100px;
+  height: 0;
+  padding-top: 100%; /* This ensures the height is always equal to the width */
+  overflow: hidden;
+  background-color: #f0e9df;
+  text-align: center;
+}
+
+}
