@@ -21,26 +21,22 @@
 <div class="parchment"></div>
 
 <div class="grid-container">
+
+    <!-- mapbox map -->
 <div class="item1">
     <div id="map-container">
         <div id="map"></div> <!-- This is where your map will be placed -->
     </div>
+<script src="aritablemap.js"></script> <!-- script for the map -->
+</div> 
 
-<div class="map-overlay top">
-<script src="aritablemap.js"></script>
-</div></div>
-
+  <!-- Container for cards -->
 <div class="item2">
-   
     <div class="container">
-
-        <!-- Container for dynamically generated cards -->
         <div class="slider">
-            <!-- Cards will be dynamically added here -->
-        <!-- Card template (hidden) -->
+            <!-- Cards will be added here -->
         <div class="card">
-    
-        <!-- <div class="card-template" style="display: none;"> -->
+        <!-- card-template-->
                 <div class="copy">
                     <h1 style="padding-top: 50px;"></h1>
                     <p style="padding-top: 40px;"></p>
@@ -53,23 +49,25 @@
     </div>
     </div>
      
-        <script src="newscards.js"></script>
+    <script src="newscards.js"></script> <!-- script for the cards -->
 
 
-
+    <!-- information -->
 <div class="item3">
-    
+    <!-- text about the event -->
 <p class="text">Sapphic Mapping is a guide to discovering events for lesbian, bisexual,  non-binary/GNC,  trans , femmes based in London. </p>
-
-
+    <!-- form to add an event -->
 <p style="padding-top: 20px;">To add an Event:</p><button class="open-button" onclick="openForm()">Click here</button>  
-
+    <!-- container for the airtable embed -->
+    <!-- form to add an event -->
 <div class="iframe-container" id="myIframeContainer">
-    <iframe class="airtable-embed" src="https://airtable.com/embed/appgWjtXezZjNtkDt/shrXzq7m3faaHV8EQ" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/appgWjtXezZjNtkDt/shrXzq7m3faaHV8EQ" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
     <button type="button" class="open-button" style="position:absolute; top:10px; right:10px;" onclick="closeForm()">Close</button>
 </div>  
 
-<script>
+<script>   
+//  button to add an event  
     function openForm() {
         document.getElementById("myIframeContainer").style.display = "block";
     }
@@ -107,11 +105,3 @@
 </body>
 </html>
  
- <!-- Make the form connect to a submission point, airtable with a feedback point -->
-<!-- Make the markers different colours based on different events -->
-<!-- make the cards colour coded based on different events also --> 
-<!-- Make it so the permenant events are always there on the cards 
-Make it so the permenant events are always there on the markers -->
-
-<!-- Css -->
-<!-- Connect the years to the cards --> 
