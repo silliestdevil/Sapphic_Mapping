@@ -1,9 +1,8 @@
 
-
   .item1 { grid-area: item1; }
   .item2 { grid-area: item2; }
   .item3 { grid-area: item3; }
- 
+
   /* Total scrollbar width */
 ::-webkit-scrollbar {
   width: 12px; /* Adjust the width */
@@ -44,7 +43,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
-  
+
   }
 
 
@@ -53,10 +52,10 @@
   font-weight: 300;
   font-style: normal;
   padding-top: 50px;
- 
+
 }
 
- 
+
 #select-month {
   width: 170px;
   font-family: "sutro-deluxe-inline-fill", sans-serif;
@@ -83,11 +82,11 @@
   outline: none;
   border-color: #a93838;
   color: #a93838;
-  
+
 }
 
 
- 
+
 /* Targeting the main popup container */
 .mapboxgl-popup {
   color: #a93838; /* Text color */
@@ -158,12 +157,12 @@ h1{
 
 
 .intros{
- 
+
   font-family: "sutro-deluxe-primary", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  
+
   color: #e8d0d0;
 }
 
@@ -185,15 +184,15 @@ p{
   color: #a93838;
 }
 #marker {
-     
+
     background-size: cover;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-  
+
 }
- 
+
 
   .open-button {
     position:relative;
@@ -220,7 +219,7 @@ p{
     height: 533px;
 }
 
- 
+
 @media only screen and (min-width: 980px){
 
   .grid-container > div {
@@ -246,7 +245,7 @@ p{
    background: rgb(54, 97, 83);
   }
 
- 
+
   html, body {
     margin: 0;
     /** Possibly padding too **/
@@ -271,8 +270,8 @@ p{
     margin: 20px auto 0;
     border:  6px double rgba(154, 52, 52, 0.689);
   }
-  
-  
+
+
   .container {
     position: relative;
     width: 100%;
@@ -281,7 +280,7 @@ p{
 border-radius: 20px;
     height: 500px;
     padding-top: 100%; /* This ensures the height is always equal to the width */
-   
+
     /* overflow: hidden; */
 
   }
@@ -294,8 +293,8 @@ border-radius: 20px;
 
 .card{
     position: absolute;
-    width: 100%;
     top: 30%; 
+
     width: 180px;
 height: 260px; 
 border-radius: 10px; 
@@ -383,7 +382,7 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
     background: #d8cfcf;
     border:  6px double rgba(154, 52, 52, 0.689);
   }
-  
+
   .container {
     position: relative;
     width: 95%;
@@ -391,9 +390,9 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
     max-width: 470px;
     min-width: 200px;
     height: 50px;
-   
+
     padding-top: 100%; /* This ensures the height is always equal to the width */
-  
+
     overflow: hidden;
     background-color: #f0e9df;
 
@@ -410,13 +409,12 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
     padding: 0;
     background-color: #f0e9df;
     overflow-x: hidden;
- 
+
   }
   .card{
     position: absolute;
     top: 30%; 
     width: 50%; 
- left: -10px;
     max-width: 300px;
 height: 300px; 
 border-radius: 10px; 
@@ -439,15 +437,17 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
   #map-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 450px;
     min-width: 200px;
-   height: 0px;
-   margin: 20px 0 auto;
-    padding-top: 100%; /* This ensures the height is always equal to the width */
+   margin: auto 0;
+
+    padding-top: 72%; /* This ensures the height is always equal to the width */
     border-radius: 50%;
     overflow: hidden;
-    background: #d8cfcf;
+    background-color: #f0e9df;
     border:  6px double rgba(154, 52, 52, 0.689);
+    top: 20px;
+    margin: 10px;
   }
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
@@ -484,8 +484,8 @@ padding-right: 30px;
     overflow-y: auto;
   }
 
-  
-  
+
+
   .container {
     position: relative;
     width: 100%;
@@ -517,10 +517,10 @@ padding-right: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
-  
+
   }
 }
- 
+
 @media only screen and (min-width: 400px) and (max-width: 450px){
   html, body {
     margin: 0;
@@ -528,7 +528,7 @@ padding-right: 30px;
     /** Possibly padding too **/
     padding: 0;
     background-color: #f0e9df;
- 
+
   }
 
   .grid-container > div {
@@ -556,7 +556,7 @@ padding-right: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
-  
+
   }
 
   h1{
@@ -612,7 +612,7 @@ padding-right: 10px;
   .card{
     position: absolute;
     top: 30%; 
-    width: 100%;
+    width: 200px;
 height: 300px; 
 border-radius: 10px; 
 overflow: hidden; 
@@ -624,7 +624,7 @@ border-width: 6px;
 box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
 /* outline: 1px solid #a93838; */
 }
-  
+
 .container {
   position: relative;
   width: 100%;
@@ -678,7 +678,7 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
-  
+
   }
   h1{
     position:relative;
@@ -717,7 +717,7 @@ padding-right: 10px;
   .card{
     position: absolute;
     top: 30%; 
-    width: 100%;
+    width: 200px;
 height: 300px; 
 border-radius: 10px; 
 overflow: hidden; 
@@ -729,12 +729,11 @@ border-width: 6px;
 box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
 /* outline: 1px solid #a93838; */
 }
-  
+
 .container {
   position: relative;
   top: 20px;
   width: 100%;
-  width: 200px;
   max-width: 700px;
   min-width: 100px;
   height: 0;
