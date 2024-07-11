@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cards.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ecd1bwg.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ecd1bwg.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/justKD/AirpuckJS@master/airpuck.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js" integrity="sha512-4a56NRIrhn/ePBdSSNfwsmL+eZt/uCXEb7s+3B8tg/tDiywDMKb5u2QCdhsYQtEkUMPGE5GUVbZYqgKeRzJ7yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- https://www.youtube.com/watch?v=lxGwReGtKqs -->
+<!-- https://www.youtube.com/watch?v=lxGwReGtKqs -->
+    <title>Main</title>
+</head>
+<body>
+<header>Sapphic Mapping</header>
+<div class="parchment"></div>
+
+<div class="grid-container">
+
+    <!-- mapbox map -->
+<div class="item1">
+    <div id="map-container">
+        <div id="map"></div> <!-- This is where your map will be placed -->
+    </div>
+<!-- <script src="map.js"></script> script for the map -->
+</div> 
+
+  <!-- Container for cards -->
+<div class="item2">
+    <div class="container">
+        <div class="slider">
+            <!-- Cards will be added here -->
+        <div class="card">
+        <!-- card-template-->
+                <div class="copy">
+                    <h1 style="padding-top: 50px;"></h1>
+                    <p style="padding-top: 40px;"></p>
+                    <p style="padding-top: 40px;"></p>
+                    <p style="padding-top: 40px;"></p>
+                    <a style="padding-top: 40px;" href="" target="_blank">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     
+    <!-- <script src="cards.js"></script> script for the cards -->
+<script src="merged.js"></script>
+
+    <!-- information -->
+<div class="item3">
+    <!-- text about the event -->
+<p class="text">Sapphic Mapping is a guide to discovering events for lesbian, bisexual,  non-binary/GNC,  trans , femmes based in London. </p>
+ 
+<!-- form to add an event -->
+<!-- form to add an event -->
+<p style="padding-top: 20px;">To add an Event:</p><button class="open-button" onclick="openForm()">Click here</button><div class="popup" onclick="myFunction()">?
+    <span class="popuptext" id="myPopup"><p class="girlT"> Sapphic Mapping is a Community Driven Platform. </p> <p class="girlT"> Please add events to keep the site updated. To add an event fill out the form below </p>    <img src="Girb-2.jpg"></span>
+ 
+  </div>
+    <!-- container for the airtable embed -->
+    <!-- form to add an event -->
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+
+<div class="iframe-container" id="myIframeContainer">
+    <iframe class="airtable-embed" src="https://airtable.com/embed/appgWjtXezZjNtkDt/shrXzq7m3faaHV8EQ" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <button type="button" class="open-button" style="position:absolute; top:10px; right:10px;" onclick="closeForm()">Close</button>
+</div>  
+
+ 
+
+<script>   
+//  button to add an event  
+    function openForm() {
+        document.getElementById("myIframeContainer").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myIframeContainer").style.display = "none";
+    }
+</script> 
+
+<div class="select-date"> 
+    <!-- Dropdown menu to select month -->
+ <select id="select-month">
+        <option value="0">Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <div class="select-date"> 
+        <!-- Dropdown menu to select month -->
+    <select style=" position: relative;top: -40px;" id="select-year">
+            <option value="0">Year</option>
+            <option value="0">2024</option>
+        </select>
+
+      <p> <a style="position: relative; top: -50px;" href="https://www.instagram.com/charlotte_louiseyoung/">Designed by Charlotte Young  </a></p> 
+</div>
+</div>
+</div>                                     
+</div>
+</div>
+ 
+  
+</body>
+</html>
+ 
