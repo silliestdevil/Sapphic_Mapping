@@ -100,8 +100,16 @@ function bringCardToFront(eventId) {
             ease: "cubic",
         });
 
+        const screenWidth = window.innerWidth;
+
         gsap.to(cards, {
-            y: (index) => index === cards.indexOf(targetCard) ? -200 : "+=250%",
+            y: (index) => {
+                if (index === cards.indexOf(targetCard)) {
+                    return screenWidth >= 800 ? -200 : -100;
+                } else {
+                    return "+=250%";
+                }
+            },
             duration: 0.75,
             ease: "cubic",
             onComplete: () => {
@@ -112,7 +120,6 @@ function bringCardToFront(eventId) {
         });
     }
 }
-
 // Map Management
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmxvdHRleTEzIiwiYSI6ImNsdnRnbTBydjE3bGgyaW52ZmhnOWk1cnQifQ.RtR2iK3qYrJ9M7E-Ol32Wg';
 
@@ -233,3 +240,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
