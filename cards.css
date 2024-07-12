@@ -1119,7 +1119,7 @@ padding-right: 10px;
   .card{
     position: absolute;
     top: 30%; 
-    width: 100%;
+    width: 70%;
 height: 300px; 
 border-radius: 10px; 
 overflow: hidden; 
@@ -1135,12 +1135,11 @@ box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
   
 .container {
   position: relative;
-  top: 20px;
   width: 100%;
-  width: 200px;
-  max-width: 700px;
+  top: 20px;
+  max-width: 400px;
   min-width: 100px;
-  height: 0;
+  height: 200px;
   padding-top: 100%; /* This ensures the height is always equal to the width */
   overflow: hidden;
   background-color: #f0e9df;
