@@ -284,8 +284,185 @@ p{
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+@media only screen and (min-width: 1400px) {
+
+  .grid-container > div {
+    background-color: #f0e9df;
+    text-align: center;
+    font-size: 30px;
+
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'item1 item3 item2';
+    grid-gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f0e9df;
+   padding-top: 30px;
+    grid-template-columns: auto; /* Set columns to fit content */
+  }
+
+  .boxA{
+
+   background: rgb(54, 97, 83);
+  }
+
  
-@media only screen and (min-width: 980px){
+  html, body {
+    margin: 0;
+    /** Possibly padding too **/
+    padding: 0;
+    background-color: #f0e9df;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+  }
+
+  #map-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    min-width: 200px;
+   height: 0px;
+   top: -10px;
+   left: 10px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d8cfcf;
+    margin: 20px auto 0;
+    border:  6px double rgba(154, 52, 52, 0.689);
+  }
+  
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 470px;
+    min-width: 200px;
+border-radius: 20px;
+    height: 500px;
+    padding-top: 100%; /* This ensures the height is always equal to the width */
+   
+    /* overflow: hidden; */
+
+  }
+
+  .text{
+    max-width: 300px; 
+    margin: 0 auto; 
+    padding-top: 30px; 
+  }
+
+.card{
+    position: absolute;
+    width: 100%;
+    top: 30%; 
+    width: 180px;
+height: 260px; 
+border-radius: 10px; 
+overflow: hidden; 
+transform: translate3d(10%, -65%, 0); 
+background-color: #e4d8c6;
+border-style:double;
+border-width: 6px;
+padding: 20px;
+border-color: #a93838;
+/* border-color: rgb(72, 125, 98); */
+box-shadow: 0 4px 6px rgba(160, 155, 155, 0.2); /* Add shadow here */
+/* outline: 1px solid #a93838; */
+}
+
+  #map { position: absolute; top: 0; bottom: 0; width: 100%;  }
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    font-style: normal;
+    font-size: 20px;
+    top: 12px;
+    left: 5px;
+    text-transform: uppercase;
+    color: #a93838;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    position:relative;
+    text-align: center;
+    font-family: "sutro-deluxe-inline-fill", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    width: 100%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #a93838;
+    text-align: center;
+  
+    background-color: #e7dfd3;
+    text-transform: uppercase;
+    border: 6px double rgba(154, 52, 52, 0.689); /* Border all around */
+  
+    visibility: hidden;
+    width: 400px;
+    height: 380px;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+   top: -170px;
+    left: 180px;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "x";
+    position: absolute;
+    top: 2%;
+    left: 96%;
+    margin-left: -5px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.3s;
+  }
+
+  img{
+    width:160px;
+    float: right;
+    padding-right: 10px;
+     top: -50px;
+    position: relative;
+  }
+  
+  .girlT{
+    position: relative;
+    float: left; 
+    padding-left: 10px;
+     width:200px;
+
+  }
+}
+
+ 
+@media only screen and (min-width: 980px)  and (max-width: 1400px){
 
   .grid-container > div {
     background-color: #f0e9df;
